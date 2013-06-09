@@ -1,0 +1,26 @@
+{
+  "name": "material",
+  "description": "System administration and automation tool.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kalman Speier"
+  },
+  "homepage": "https://github.com/speier/material",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/speier/material.git"
+  },
+  "main": "./index",
+  "bin": {
+    "mat": "bin/mat"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "optimist": "~0.5.2",
+    "async": "~0.2.9",
+    "ssh2": "~0.2.7"
+  }
+}

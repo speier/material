@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var optimist = require('optimist');
+var matvm = require('../lib/matvm');
+
+var argv = optimist.usage('Usage: mat -h [host1,host2] <tasks> <args>').demand('h').describe('h', 'host(s) where task(s) will be executed').argv;
+
+try {
+  var hosts = argv.h;
+  var tasks = argv._[0];
+  var args = argv._.slice(1);
+  matvm.execute(hosts, tasks, args);
+} catch (ex) {
+  console.log('error: ' + ex.message);
+  throw ex;
+  process.exit(1);
+}
