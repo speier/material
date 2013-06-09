@@ -48,6 +48,6 @@ Currently I'm busy working on more features and tests. Please be patient.
 
 ### License
 
-Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
+Licensed under the MIT License, see the [LICENSE](LICENSE) file
 
 [1]: http://fabfile.org
