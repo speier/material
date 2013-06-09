@@ -2,12 +2,12 @@
 
 System administration and automation tool, inspired by [Fabric][1].
 
-Usage:
+### Usage:
 ```
 $ npm install material -g
 ```
 
-create a `matfile.js` with the following contents:
+create a `matfile.js` (anywhere) with the following contents:
 ```
 var run = require('material').run;
 
@@ -26,7 +26,7 @@ function host_type(done) {
 }
 ```
 
-then execute with the followin command:
+then execute with the following command:
 ```
 $ mat -h local host_type
 ```
@@ -43,5 +43,11 @@ Disconnected.
 ```
 
 Basically my idea is to have a simple tool for daily DevOps tasks in Node.
+
+Currently I'm busy working on more features and tests. Please be patient.
+
+### License
+
+Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
 
 [1]: http://fabfile.org
